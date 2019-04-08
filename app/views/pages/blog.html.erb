@@ -1,14 +1,17 @@
-<h1>Mon 1er blog en rails !!</h1>
+<div class="background" style="background-image: url('https://image.freepik.com/free-vector/great-hand-drawn-wild-west-background-with-rocky-mountains_23-2147590302.jpg')">
+
+	<h1>Qui sommes-nous ?</h1>
 
 
-<% @articles.each do |article| %>
-	<div class= "article">
-		<h2><%= article["title"] %></h2>
-		<p><%= article["content"] %></p>
-	</div>	
+	<% @articles.each do |article| %>
+		<div class= "article">
+			<h2><%= article["title"] %></h2>
+			
+			<p><%= article["content"] %></p>
+		</div>	
 
-<% end %>
+	<% end %>
 
-
+</div>
 
 

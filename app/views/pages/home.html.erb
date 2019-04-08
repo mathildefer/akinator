@@ -1,41 +1,27 @@
-<div class="wrapper" style="background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+<div class="background" style="background-image: url('https://image.freepik.com/free-vector/great-hand-drawn-wild-west-background-with-rocky-mountains_23-2147590302.jpg')">
 
-<div class="container">
+	<h1>Akinator</h1>
+	<div class="btn_game">
+	<%= link_to( "Commencer le jeu", games_path, method: :post, class: "btn btn-primary btn-lg" ) %>
+	</div>
 
-	<div class="row">
-		<div class="col-md-6">
-			<div class="ma question"
-				<h3>Ma question ?</h3>
-				<div class="links">
-					<div class="btn btn-danger btn-lg">
-						NON
-					</div>
-					<div class="btn btn-success btn-lg">
-						OUI
-					</div>
-				</div>
+
+	<div class="akinator">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="http://rosatubes.r.o.pic.centerblog.net/e55e8ede.png" alt="", class="bulle">
+				<div class="pensees">
+					<p>Je peux lire dans tes pensées</p>
+				</div>	
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-3">
+				<img src="https://fr.akinator.com/bundles/elokencesite/images/akitudes_670x1096/defi.png?v95" alt="", class="avatar">
 			</div>
 		</div>
-		<div class="col-md-6">
-			<img src="https://fr.akinator.com/bundles/elokencesite/images/akitudes_670x1096/defi.png?v95" alt="", class="avatar">
-		</div>
 	</div>
-</div>
-
-
-    <h1>Akinator</h1>
-
-
-    <%= Time.now.strftime("%d/%m/%y %Hh%m") %>
-
-
-    <p>Challenge me to see if I can find who you think!</p>
-
-    <%= link_to( "Mon blog", pages_blog_path, method: :get, class: "btn btn-primary btn-lg" ) %>
-    
-    <%= link_to( "Commencer le jeu", games_path, method: :post, class: "btn btn-warning btn-lg" ) %>
-
-  </div>
-</div>
+	    
+	<div class="btn_blog">
+	    <%= link_to( "Qui somnmes-nous ?", pages_blog_path, method: :get, class: "btn btn-secondary btn-lg btn-block" ) %>
+	</div>
 
 </div>
