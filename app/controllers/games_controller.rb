@@ -25,8 +25,9 @@ QUESTIONS = [
     @game.save
     if question_id > 3
        redirect_to game_path(@game["id"]), method: :get
-    else 
+    else
        redirect_to edit_game_path(@game["id"], question_id: question_id), method: :get
+    end
   end
 
   def show
